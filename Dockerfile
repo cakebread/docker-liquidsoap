@@ -31,7 +31,7 @@ RUN groupadd -g 999 radio && \
     chown -R radio /etc/liquidsoap /music
 
 ARG LIQUIDSOAP_VERSION
-ARG OPAM_PACKAGES="liquidsoap${LIQUIDSOAP_VERSION:+.$LIQUIDSOAP_VERSION} taglib mad lame vorbis cry samplerate"
+ARG OPAM_PACKAGES="liquidsoap${LIQUIDSOAP_VERSION:+.$LIQUIDSOAP_VERSION} taglib mad lame vorbis cry ffmpeg ssl samplerate"
 
 USER radio
 
